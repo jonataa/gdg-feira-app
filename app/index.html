@@ -74,15 +74,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="home"></iron-icon>
             <span>Home</span>
           </a>
+          <a data-route="schedule" href="/schedule">
+            <iron-icon icon="icons:alarm"></iron-icon>
+            <span>Agenda</span>
+          </a>
 
-          <a data-route="users" href="/users">
-            <iron-icon icon="info"></iron-icon>
-            <span>Users</span>
+          <a data-route="palestrantes" href="/palestrantes">
+            <iron-icon icon="icons:accessibility"></iron-icon>
+            <span>Palestrantes</span>
           </a>
 
           <a data-route="contact" href="/contact">
             <iron-icon icon="mail"></iron-icon>
-            <span>Contact</span>
+            <span>Contato</span>
           </a>
         </paper-menu>
       </paper-scroll-header-panel>
@@ -101,12 +105,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">GDG Feira de Santana</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">The future of the web today</div>
+            <div class="bottom-title paper-font-subhead">08 de Agosto de 2015 – UEFS</div>
           </div>
 
         </paper-toolbar>
@@ -115,45 +119,86 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
 
-            <section data-route="home">
+            <section data-route="schedule">
               <paper-material elevation="1">
-                <my-greeting></my-greeting>
-
-                <p class="paper-font-subhead">You now have:</p>
-                <my-list></my-list>
-
-                <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
+                <h1>Agenda</h1>                                
               </paper-material>
               <paper-material elevation="1">
-                <p class="paper-font-body2">This is another card.</p>
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  13h30
+                </p>
+                <p class="schedule-item-title">Web Components & Polymer</p>
+                <p class="schedule-item-speaker">JONATA WEBER</p>
+                <p class="schedule-description">Web Components é um termo guarda chuva para quatro novas especificações: Custom Elements, Shadow DOM, HTML Template e HTML Import. Iremos explorar nessa palestra seus principais recursos e como elas podem mudar a maneira que desenvolvemos componentes para Web.</p>
+              </paper-material>  
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  14h10
+                </p>
+                <p class="schedule-item-title">WTM SSA no GDG Feira 2015</p>
+                <p class="schedule-item-speaker">MARLA DORE</p>
+                <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
+              </paper-material>  
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  14h50
+                </p>
+                <p class="schedule-item-title">Dart: Resistir é Inútil</p>
+                <p class="schedule-item-speaker">MARLON CARVALHO</p>
+                <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
               </paper-material>
-
-              <paper-material elevation="1" class="paper-font-body2">
-                <h1 id="license">License</h1>
-                <p>Everything in this repo is BSD style license unless otherwise specified.</p>
-                <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
-                <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-                <ul>
-                <li>Redistributions of source code must retain the above copyright
-                notice, this list of conditions and the following disclaimer.</li>
-                <li>Redistributions in binary form must reproduce the above
-                copyright notice, this list of conditions and the following disclaimer
-                in the documentation and/or other materials provided with the
-                distribution.</li>
-                <li>Neither the name of Google Inc. nor the names of its
-                contributors may be used to endorse or promote products derived from
-                this software without specific prior written permission.</li>
-                </ul>
-                <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  16h00
+                </p>
+                <p class="schedule-item-title">O futuro dos WebApps com AngularJS 2.0</p>
+                <p class="schedule-item-speaker">WILSON MENDES</p>
+                <p class="schedule-description">Angularjs é um framework javascript construido e mantido pelo grupo de engenheiros do Google, ele usa o HTML como uma "template engine" aliado a conceitos de Orientação a Objetos, testes, dentre outros, no intuito de fornecer uma solução completa para o cliente-side de sua aplicação. Além disso tem total compatibilidade com as bibliotecas javascript mais utilizadas, como jQuery. é um novo conceito para desenvolvimento de web apps client-site. Entenda as novidades que estão por vir com o AngularJS 2.0, as novas definições, facilidades, novos desafios e entenda o motivo do AngularJS ser um framework excelente para todos os momentos.</p>
+              </paper-material>
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  16h40
+                </p>
+                <p class="schedule-item-title">Ionic: The Web SDK for Develop Mobile Apps</p>
+                <p class="schedule-item-speaker">MATHEUS CARDOSO</p>
+                <p class="schedule-description">Ionic é um framework para desenvolvimento de aplicações para dispositivos móveis que visa o desenvolvimento de apps híbridas e de rápido e fácil desenvolvimento.</p>
+              </paper-material>
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  17h20
+                </p>
+                <p class="schedule-item-title">Vida e carreira no Vale do Silício</p>
+                <p class="schedule-item-speaker">ROBERTO BITTENCOURT</p>
+                <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
+              </paper-material>
+              <paper-material elevation="1">
+                <p class="schedule-time">
+                  <iron-icon icon="icons:alarm"></iron-icon>
+                  18h00
+                </p>
+                <p class="schedule-item-title">Encerramento</p>                                
               </paper-material>
 
             </section>
 
-            <section data-route="users">
+            <section data-route="palestrantes">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a>
+                <h2 class="paper-font-display2">Palestrantes</h2>
+                <p>This is the users section</p>                
+              </paper-material>
+              <paper-material elevation="1">
+                <h3 class="schedule-item-speaker">MATHEUS CARDOSO</h3>
+                <p>Pesquisador e pythonista inveterado, além de um "javascripter" convertido. Sou um pai apaixonado e um desenvolvedor de software entusiasta. Sim, pode crer, eu sou um dos últimos dos românticos.</p>
+              </paper-material>
+              <paper-material elevation="1">
+                <h3 class="schedule-item-speaker">JONATA WEBER</h3>
+                <p>Programador apaixonado e inquieto por novas tecnologias, atualmente trabalha com desenvolvimento Web, palestra em eventos e ministra cursos PHP na Universidade Salvador.</p>
               </paper-material>
             </section>
 
