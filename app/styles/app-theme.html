@@ -32,6 +32,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --secondary-text-color:     #727272;
     --disabled-text-color:      #BDBDBD;
     --divider-color:            #B6B6B6;
+    --title-page-color:         #424242;
 
 
     /* Components */
@@ -52,7 +53,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   /* General styles */
-  
+  a {
+    color: var(--default-primary-color);
+  }
+
+  .paper-font-display2 {
+    margin-left: 10px;
+    color: var(--title-page-color);
+  }
+
   .section-home img {
     width: 100%;
   }
@@ -63,7 +72,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   }
 
   .paper-font-title {
-    color: #ffffff;
+    color: var(--text-primary-color);
   }
 
   .schedule-item-title {
@@ -91,15 +100,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     margin-right: 30px;
   }
 
+  .speaker-bio {
+    @apply(--layout-flex-auto);
+  }
+
   .schedule-item-speaker h3 {
     color: var(--dark-primary-color);
     font-weight: bold;
-  }
-
-  #drawerToolbar {
-    color: var(--secondary-text-color);
-    background-color: var(--drawer-menu-color);
-    border-bottom: var(--drawer-toolbar-border-color);
   }
 
   paper-scroll-header-panel {

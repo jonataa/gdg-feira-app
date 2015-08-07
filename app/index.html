@@ -131,16 +131,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </section>
             <section data-route="schedule">
-              <paper-material elevation="1" class="section-title">
-                <h2 class="paper-font-display2">Agenda</h2>
-              </paper-material>
+              <h2 class="paper-font-display2">&lt;agenda/&gt;</h2>
               <paper-material elevation="1">
                 <p class="schedule-time">
                   <iron-icon icon="icons:alarm"></iron-icon>
                   13h30
                 </p>
                 <p class="schedule-item-title">Web Components & Polymer</p>
-                <p><a href="/speakers" class="speaker-name">JONATA WEBER</a></p>
+                <p><a data-route="speakers" href="/speakers" class="speaker-name">JONATA WEBER</a></p>
                 <p class="schedule-description">Web Components é um termo guarda chuva para quatro novas especificações: Custom Elements, Shadow DOM, HTML Template e HTML Import. Iremos explorar nessa palestra seus principais recursos e como elas podem mudar a maneira que desenvolvemos componentes para Web.</p>
               </paper-material>
               <paper-material elevation="1">
@@ -149,7 +147,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   14h10
                 </p>
                 <p class="schedule-item-title">WTM SSA no GDG Feira 2015</p>
-                <p><a href="/speakers" class="speaker-name">MARLA DORE</a></p>
+                <p><a data-route="speakers" href="/speakers" class="speaker-name">MARLA DORE</a></p>
                 <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
               </paper-material>
               <paper-material elevation="1">
@@ -158,7 +156,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   14h50
                 </p>
                 <p class="schedule-item-title">Dart: Resistir é Inútil</p>
-                <p><a href="/speakers" class="speaker-name">MARLON CARVALHO</a></p>
+                <p><a data-route="speakers" href="/speakers" class="speaker-name">MARLON CARVALHO</a></p>
                 <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
               </paper-material>
               <paper-material elevation="1">
@@ -174,7 +172,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   16h40
                 </p>
                 <p class="schedule-item-title">Ionic: The Web SDK for Develop Mobile Apps</p>
-                <p><a href="/speakers" class="speaker-name">MATHEUS CARDOSO</a></p>
+                <p><a data-route="speakers" href="/speakers" class="speaker-name">MATHEUS CARDOSO</a></p>
                 <p class="schedule-description">Ionic é um framework para desenvolvimento de aplicações para dispositivos móveis que visa o desenvolvimento de apps híbridas e de rápido e fácil desenvolvimento.</p>
               </paper-material>
               <paper-material elevation="1">
@@ -183,7 +181,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                   17h20
                 </p>
                 <p class="schedule-item-title">Vida e carreira no Vale do Silício</p>
-                <p><a href="/speakers" class="speaker-name">ROBERTO BITTENCOURT</a></p>
+                <p><a data-route="speakers" href="/speakers" class="speaker-name">ROBERTO BITTENCOURT</a></p>
                 <p class="schedule-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat molestie nibh, ut semper mauris hendrerit eget. Nunc porttitor elementum nulla vitae laoreet. Nulla facilisi. Nunc sodales a odio vel malesuada. Aliquam massa neque, luctus a urna eu, maximus placerat magna.</p>
               </paper-material>
               <paper-material elevation="1">
@@ -197,12 +195,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </section>
 
             <section data-route="speakers">
-              <paper-material elevation="1">
-                <h2 class="paper-font-display2">Palestrantes</h2>
-              </paper-material>
+              <h2 class="paper-font-display2">&lt;palestrantes/&gt;</h2>
               <paper-material elevation="1" class="speaker-item">
-                <img src="/images/matheus-cardoso.jpeg" alt="Palestrante Matheus Cardoso" />
                 <div>
+                  <img src="/images/matheus-cardoso.jpeg" alt="Palestrante Matheus Cardoso" />
+                </div>
+                <div class="speaker-bio">
                   <h3 class="speaker-name">MATHEUS CARDOSO</h3>
                   <p>Pesquisador e pythonista inveterado, além de um "javascripter" convertido. Sou um pai apaixonado e um desenvolvedor de software entusiasta. Sim, pode crer, eu sou um dos últimos dos românticos.</p>
                 </div>
@@ -239,7 +237,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <section data-route="contact">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Contato</h2>
+                <h2 class="paper-font-display2">&lt;contato/&gt;</h2>
                 <div class="g-page" data-href="https://plus.google.com/101301229214170008465" data-layout="portrait" data-width="300"></div>
               </paper-material>
             </section>
