@@ -53,6 +53,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   /* General styles */
   
+  .section-home img {
+    width: 100%;
+  }
+
+  .user-image {
+    border-radius: 50%;
+    width: 70px;
+  }
+
+  .paper-font-title {
+    color: #ffffff;
+  }
+
   .schedule-item-title {
       font-size: 20px;
       line-height: 1;
@@ -61,7 +74,24 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       color: var(--primary-text-color);
   }
 
-  .schedule-item-speaker {
+  .speaker-name {
+    color: var(--default-primary-color);
+    font-weight: bold;
+  }
+
+  .speaker-item {
+    @apply(--layout-horizontal);
+    @apply(--layout-center);
+  }
+
+  .speaker-item img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+  }
+
+  .schedule-item-speaker h3 {
     color: var(--dark-primary-color);
     font-weight: bold;
   }
