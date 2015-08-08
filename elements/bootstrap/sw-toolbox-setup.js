@@ -8,7 +8,7 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-var swToolboxURL = new URL('../sw-toolbox/sw-toolbox.js', params.get('baseURI')).href;
+var swToolboxURL = new URL('elements/sw-toolbox/sw-toolbox.js', params.get('baseURI')).href;
 importScripts(swToolboxURL);
 
 if (params.has('defaultCacheStrategy')) {
