@@ -99,7 +99,7 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist/elements'));
 
   var elements = gulp.src(['app/images/**/*'])
-    .pipe(gulp.dest('dist/images'));  
+    .pipe(gulp.dest('dist/images'));
 
   var swBootstrap = gulp.src(['bower_components/platinum-sw/bootstrap/*.js'])
     .pipe(gulp.dest('dist/elements/bootstrap'));
@@ -242,7 +242,7 @@ gulp.task('default', ['clean'], function (cb) {
     ['copy', 'styles'],
     'elements',
     ['jshint', 'images', 'fonts', 'html'],
-    'vulcanize',
+    'vulcanize', 'precache',
     cb);
     // Note: add , 'precache' , after 'vulcanize', if your are going to use Service Worker
 });
