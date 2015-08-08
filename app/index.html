@@ -72,7 +72,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Drawer Content -->
         <paper-menu class="list" attr-for-selected="data-route" selected="{{route}}" on-iron-select="onMenuSelect">
-          <a data-route="home" href="/gdg-feira-app/">
+          <a data-route="home" href="/gdg-feira-app">
             <iron-icon icon="home"></iron-icon>
             <span>Home</span>
           </a>
@@ -248,7 +248,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </paper-drawer-panel>
 
     <!-- Uncomment next block to enable Service Worker support (1/2) -->
-    <!--
+
     <paper-toast id="caching-complete"
                  duration="6000"
                  text="Caching complete! This app will work offline.">
@@ -262,12 +262,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                          precache-file="precache.json">
       </platinum-sw-cache>
     </platinum-sw-register>
-    -->
+
 
   </template>
 
   <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>  
+  <script src="scripts/app.js"></script>
   <!-- endbuild-->
   <script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
